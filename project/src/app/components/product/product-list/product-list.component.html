@@ -1,0 +1,20 @@
+<div class="container" id="navbar-container">
+  <section class="section">
+    <div class="container">
+      <div class="has-text-centered" id="services-text-container">
+        <h1 class="title is-1">Delicious Fruits</h1>
+        <h4 class="subtitle">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have
+        </h4>
+      </div>
+      <br />
+      <div class="columns">
+          <app-product-card *ngFor="let item of record" [product]="item"></app-product-card>
+      </div>
+      <div class="buttons is-centered">
+        <button class="button is-black is-medium is-link">Read More</button>
+      </div>
+    </div>
+  </section>
+</div>
