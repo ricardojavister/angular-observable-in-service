@@ -17,7 +17,7 @@ export class ProductListComponent implements OnInit {
 
   getProducts(): void {
     this.productService.getProducts().subscribe(data=>{
-      this.record = data;
+      this.record = data.record;
     })
   }
 
